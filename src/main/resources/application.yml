@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: server
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: "jdbc:mysql://34.132.140.187/INFOSERVICE?useSSL=false"
+    password: "unc471311"
+    username: "root"
+  jpa:
+    hibernate.ddl-auto: none
+    generate-ddl: true
+    show-sql: true
+  management:
+    security:
+      enabled: false
