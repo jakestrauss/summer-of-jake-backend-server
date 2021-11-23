@@ -17,7 +17,7 @@ public class RouteController {
     @Autowired
     private RouteRepository routeRepository;
 
-    @CrossOrigin(origins = {"http://localhost:3000","https://www.summerofjake.com/"})
+    @CrossOrigin(origins = {"http://localhost:3000","https://www.summerofjake.com"})
     @GetMapping("routes")
     public List<Route> getRoutes() {
         return this.routeRepository.findAll();
