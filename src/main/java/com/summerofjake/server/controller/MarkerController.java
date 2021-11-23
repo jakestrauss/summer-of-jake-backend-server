@@ -3,7 +3,6 @@ package com.summerofjake.server.controller;
 import com.summerofjake.server.CrossOriginsList;
 import com.summerofjake.server.model.Marker;
 import com.summerofjake.server.repository.MarkerRepository;
-import org.hibernate.exception.ConstraintViolationException;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
