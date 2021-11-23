@@ -19,7 +19,7 @@ public class MarkerController {
     @Autowired
     private MarkerRepository markerRepository;
 
-    @CrossOrigin(origins = "https://www.summerofjake.com/")
+    @CrossOrigin(origins = {"http://localhost:3000","https://www.summerofjake.com/"})
     @GetMapping("markers")
     public List<Marker> getMarkers() {
         return this.markerRepository.findAll();
