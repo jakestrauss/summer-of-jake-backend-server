@@ -20,4 +20,6 @@ spring:
       key-store-type: pkcs12
       key-alias: springboot
       key-password: password
+      enabled: true
+      protocol: TLS
     port: 443
