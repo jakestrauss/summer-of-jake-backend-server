@@ -14,9 +14,10 @@ spring:
     security:
       enabled: false
   server:
-    port: 443
     ssl:
-      key-store: keystore.p12
-      key-store-password: springboot
-      keyStoreType: PKCS12
-      keyAlias: tomcat
+      key-store: classpath:keystore.p12
+      key-store-password: password
+      key-store-type: pkcs12
+      key-alias: springboot
+      key-password: password
+    port: 443
