@@ -1,6 +1,5 @@
 package com.summerofjake.server.controller;
 
-import com.summerofjake.server.CrossOriginsList;
 import com.summerofjake.server.model.Marker;
 import com.summerofjake.server.repository.MarkerRepository;
 import org.hibernate.service.spi.ServiceException;
@@ -20,7 +19,7 @@ public class MarkerController {
     @Autowired
     private MarkerRepository markerRepository;
 
-    @CrossOriginsList
+    @CrossOrigin(origins = "https://www.summerofjake.com/")
     @GetMapping("markers")
     public List<Marker> getMarkers() {
         return this.markerRepository.findAll();
