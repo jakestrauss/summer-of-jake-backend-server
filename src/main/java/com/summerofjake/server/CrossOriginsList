@@ -1,0 +1,18 @@
+package com.summerofjake.server;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.METHOD})
+@CrossOrigin
+public @interface CrossOriginsList {
+
+    public String[] crossOrigins() default  {
+            "http://localhost:3000", "https://www.summerofjake.com/"
+    };
+}

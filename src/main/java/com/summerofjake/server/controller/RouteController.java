@@ -1,5 +1,6 @@
 package com.summerofjake.server.controller;
 
+import com.summerofjake.server.CrossOriginsList;
 import com.summerofjake.server.model.Route;
 import com.summerofjake.server.repository.RouteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ public class RouteController {
     @Autowired
     private RouteRepository routeRepository;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOriginsList
     @GetMapping("routes")
     public List<Route> getRoutes() {
         return this.routeRepository.findAll();

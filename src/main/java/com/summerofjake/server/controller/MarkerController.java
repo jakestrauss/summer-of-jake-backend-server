@@ -1,5 +1,6 @@
 package com.summerofjake.server.controller;
 
+import com.summerofjake.server.CrossOriginsList;
 import com.summerofjake.server.model.Marker;
 import com.summerofjake.server.repository.MarkerRepository;
 import org.hibernate.exception.ConstraintViolationException;
@@ -20,7 +21,7 @@ public class MarkerController {
     @Autowired
     private MarkerRepository markerRepository;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOriginsList
     @GetMapping("markers")
     public List<Marker> getMarkers() {
         return this.markerRepository.findAll();
