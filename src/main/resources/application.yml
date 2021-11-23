@@ -13,13 +13,3 @@ spring:
   management:
     security:
       enabled: false
-  server:
-    ssl:
-      key-store: classpath:springboot.p12
-      key-store-password: password
-      key-store-type: pkcs12
-      key-alias: springboot
-      key-password: password
-      enabled: true
-      protocol: TLS
-    port: 443
