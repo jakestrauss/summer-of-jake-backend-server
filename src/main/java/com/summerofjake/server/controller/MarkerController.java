@@ -35,10 +35,10 @@ public class MarkerController {
 
         //write each marker to db if it's not already in database
         List<Marker> postedMarkers = new ArrayList<>();
-        for(Marker m : markers) {
+        for (Marker m : markers) {
             try {
                 //only write to db if existing marker isn't there
-                if(this.markerRepository.findByUrl(m.getUrl()).isEmpty()) {
+                if (this.markerRepository.findByUrl(m.getUrl()).isEmpty()) {
                     postedMarkers.add(this.markerRepository.saveAndFlush(m));
                 } else {
                     System.out.println("Marker with photo url " + m.getUrl() + " not written to db because it's already present");
