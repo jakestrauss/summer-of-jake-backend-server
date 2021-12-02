@@ -52,8 +52,8 @@ public class RouteController {
         if(postedRoutes.size() == routes.size()) {
             return new ResponseEntity<>(Boolean.TRUE, HttpStatus.OK);
         } else {
-            System.out.println("Not all markers posted to database. "
-                    + postedRoutes.size() + " markers posted when "
+            System.out.println("Not all routes posted to database. "
+                    + postedRoutes.size() + " routes posted when "
                     +  routes.size() + " were available to post.");
         }
 
