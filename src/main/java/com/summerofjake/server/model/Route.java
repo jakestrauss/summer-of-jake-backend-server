@@ -11,7 +11,7 @@ public class Route {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
 
-    @Column (name = "url", unique = true)
+    @Column (name = "url")
     private String url;
 
     @Column(name="activityDate", columnDefinition = "TIMESTAMP")
