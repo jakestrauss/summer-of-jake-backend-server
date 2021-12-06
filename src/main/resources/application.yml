@@ -2,10 +2,9 @@ spring:
   application:
     name: server
   datasource:
-    driverClassName: com.mysql.jdbc.Driver
-    url: "jdbc:mysql://34.132.140.187/INFOSERVICE?useSSL=false"
+    url: "jdbc:mysql://summer-of-jake-db-2.czgclmxuds1z.us-east-1.rds.amazonaws.com:3306/INFOSERVICE"
     password: "unc471311"
-    username: "root"
+    username: "admin"
   jpa:
     hibernate.ddl-auto: none
     generate-ddl: true
