@@ -1,4 +1,5 @@
-# Summer of Jake adventure map back-end database fill job
+# Summer of Jake adventure map back-end server
+# Project currently offline due to high infra costs, will come back later to refactor infrastructure when I have more time :)
 
 This repo hosts the back-end server used to host summerofjake.com. It essentially serves as the DAO for the MySQL database, which
 contains the references to all data needed to display on the interactive map. The front-end calls this server to retrieve all data
